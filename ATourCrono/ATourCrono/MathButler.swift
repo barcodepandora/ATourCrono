@@ -12,6 +12,6 @@ class MathButler {
     static let shared = MathButler()
     
     func calculateAngleInDegrees(numberOfAngles: Int, numberOfAngle: Int) -> Double {
-        return numberOfAngles > 0 ? 360 / Double(numberOfAngle) : 0
+        return numberOfAngles > 0 ? Double(numberOfAngle) * 30 : 0
     }
 }

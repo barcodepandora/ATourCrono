@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ClockView: View {
     
-    @State private var angleNumber = 12
+    @Binding var hour: Int
     @State private var hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    let closure: () -> Void
     
     var body: some View {
         ZStack {
@@ -20,21 +21,22 @@ struct ClockView: View {
             Rectangle()
                 .fill(Color.cyan)
                 .frame(width: 2, height: 64)
-                .rotationEffect(Angle(degrees: MathButler.shared.calculateAngleInDegrees(numberOfAngles: hours.count, numberOfAngle: angleNumber)))
+                .rotationEffect(Angle(degrees: MathButler.shared.calculateAngleInDegrees(numberOfAngles: hours.count, numberOfAngle: hour)))
         }
         .gesture(
             DragGesture()
                 .onEnded() { value in
                     if value.translation.width > 20 {
-                        angleNumber = angleNumber == 1 ? 12: angleNumber - 1
+                        hour = hour == 1 ? 12: hour - 1
                     } else if value.translation.width < 20 {
-                        angleNumber = angleNumber == 12 ? 1: angleNumber + 1
+                        hour = hour == 12 ? 1: hour + 1
                     }
+                    closure()
                 }
         )
     }
 }
 
-#Preview {
-    ClockView()
-}
+//#Preview {
+//    ClockView()
+//}

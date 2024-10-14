@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560B13F32CBD6978004D7402 /* ATourCronoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B13F22CBD6978004D7402 /* ATourCronoViewModel.swift */; };
+		560B13F62CBD6A23004D7402 /* ATourCronoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B13F52CBD6A23004D7402 /* ATourCronoView.swift */; };
+		560B13F92CBD6B69004D7402 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B13F82CBD6B69004D7402 /* Action.swift */; };
+		560B13FB2CBD767F004D7402 /* Map4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B13FA2CBD767F004D7402 /* Map4View.swift */; };
 		56AA285A2CBAD9C600592BD2 /* ATourCronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA28592CBAD9C600592BD2 /* ATourCronoApp.swift */; };
 		56AA285C2CBAD9C600592BD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA285B2CBAD9C600592BD2 /* ContentView.swift */; };
 		56AA285E2CBAD9CB00592BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AA285D2CBAD9CB00592BD2 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560B13F22CBD6978004D7402 /* ATourCronoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATourCronoViewModel.swift; sourceTree = "<group>"; };
+		560B13F52CBD6A23004D7402 /* ATourCronoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATourCronoView.swift; sourceTree = "<group>"; };
+		560B13F82CBD6B69004D7402 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		560B13FA2CBD767F004D7402 /* Map4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4View.swift; sourceTree = "<group>"; };
 		56AA28562CBAD9C600592BD2 /* ATourCrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATourCrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AA28592CBAD9C600592BD2 /* ATourCronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATourCronoApp.swift; sourceTree = "<group>"; };
 		56AA285B2CBAD9C600592BD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +83,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		560B13F12CBD5D1C004D7402 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				560B13F22CBD6978004D7402 /* ATourCronoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		560B13F42CBD6A11004D7402 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				560B13F52CBD6A23004D7402 /* ATourCronoView.swift */,
+				560B13FA2CBD767F004D7402 /* Map4View.swift */,
+				56AA28832CBADF2200592BD2 /* ClockView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		560B13F72CBD6B58004D7402 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				560B13F82CBD6B69004D7402 /* Action.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		56AA284D2CBAD9C600592BD2 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +132,13 @@
 		56AA28582CBAD9C600592BD2 /* ATourCrono */ = {
 			isa = PBXGroup;
 			children = (
+				560B13F72CBD6B58004D7402 /* Model */,
+				560B13F12CBD5D1C004D7402 /* ViewModel */,
+				560B13F42CBD6A11004D7402 /* View */,
 				56AA28592CBAD9C600592BD2 /* ATourCronoApp.swift */,
 				56AA285B2CBAD9C600592BD2 /* ContentView.swift */,
 				56AA285D2CBAD9CB00592BD2 /* Assets.xcassets */,
 				56AA285F2CBAD9CB00592BD2 /* Preview Content */,
-				56AA28832CBADF2200592BD2 /* ClockView.swift */,
 				56AA28852CBAE15E00592BD2 /* MathButler.swift */,
 			);
 			path = ATourCrono;
@@ -263,9 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560B13F32CBD6978004D7402 /* ATourCronoViewModel.swift in Sources */,
 				56AA285C2CBAD9C600592BD2 /* ContentView.swift in Sources */,
 				56AA28842CBADF2200592BD2 /* ClockView.swift in Sources */,
 				56AA285A2CBAD9C600592BD2 /* ATourCronoApp.swift in Sources */,
+				560B13F92CBD6B69004D7402 /* Action.swift in Sources */,
+				560B13F62CBD6A23004D7402 /* ATourCronoView.swift in Sources */,
+				560B13FB2CBD767F004D7402 /* Map4View.swift in Sources */,
 				56AA28862CBAE15E00592BD2 /* MathButler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
